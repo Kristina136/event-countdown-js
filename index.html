@@ -1,0 +1,67 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Countdown</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body>
+
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline id="myVideo">
+            <source src="" type="video/mp4">
+        </video>
+
+        <div class="eventContainer">
+            <h1 class="heading funny-title section-title"></h1>
+            <h1 class="date"></h1>
+            <input class="eventName" type="text" placeholder="Text your event name">
+            <input class="congradulationsInput" type="text" placeholder="Text your congradulations">
+            <button class="add custom-btn btn-3"><span>Add</span> </button>
+
+            <input type="datetime-local" class="eventDate" value="" id="datep"><br>
+            <button class="add_time custom-btn btn-3"><span>Add date</span></button>
+        </div>
+
+
+
+
+
+
+        <div class="container">
+            <div class="item one">
+                <h2 class=" displayTime displayDay"></h2>
+                <h2>DAYS</h2>
+            </div>
+            <div class="item one">
+                <h2 class="displayTime displayHour"></h2>
+                <h2>HOURS</h2>
+            </div>
+            <div class="item one">
+                <h2 class="displayTime displayMinute"></h2>
+                <h2>MINUTES</h2>
+            </div>
+            <div class="item one">
+                <h2 class="displayTime displaySecond"></h2>
+                <h2>SECONDS</h2>
+            </div>
+        </div>
+
+
+
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="script.js"></script>
+    </body>
+
+    </html>
